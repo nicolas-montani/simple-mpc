@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MPC</title>
+</head>
+<body>
+    <div>
+        <h1>Hi, welcome to the simple server API</h2>
+        <h2>Current values are:</h2>
+        <h3>x = {{x}}</h3>
+        <h3>y = {{y}}</h3>
+        <h3>z = {{z}}</h3>
+        <h3>k = {{k}}</h3>
+    </div>
+    <div>
+        <h2>Change values:</h2>
+        <p>!!Every option has to have a value!!</p>
+        <form action="/change" method="post">
+
+            <label for="cast">Cast:</label><br>
+            <input type="radio" name="cast" value="unicast">Unicast
+            <input type="radio" name="cast" value="broadcast">Broadcast
+            <br>
+
+
+            <label for="server">Server:</label><br>
+            <input type="radio" name="server" value="5000">Server 5000<br>
+            <input type="radio" name="server" value="5001">Server 5001<br>
+            <input type="radio" name="server" value="5002">Server 5002<br>
+            <input type="radio" name="server" value="5003">Server 5003<br>
+            <input type="radio" name="server" value="5004">Server 5004<br>
+            <input type="radio" name="server" value="none">None<br>
+            <br>
+
+            <label for="method">Method:</label><br>
+            <input type="radio" name="method" value="POST">POST
+            <input type="radio" name="method" value="PUT">PUT
+            <input type="radio" name="method" value="GET">GET<br>
+            <br>
+
+            <label for="key">Value:</label><br>
+            <input type="radio" name="key" value="x">X
+            <input type="radio" name="key" value="y">Y
+            <input type="radio" name="key" value="z">Z<br>
+            <br>
+            
+            <label for="value">Value:</label>
+            <input type="text" name="value" id="value"><br>
+            <br>
+
+            <label for="operator">Operator:</label><br>
+            <input type="radio" name="operator" value="plus">Plus
+            <input type="radio" name="operator" value="minus">Minus
+            <input type="radio" name="operator" value="times">Times
+            <input type="radio" name="operator" value="divide">Divide
+            <input type="radio" name="operator" value="swap">Swap<br>
+            <input type="radio" name="operator" value="none">None<br>
+            <br>
+
+            <input type="submit" value="Send">
+            <br>
+
+            <H3>Response</H3>
+            <p>response</p>
+        </form>
+    </div>
+</body>
+</html>

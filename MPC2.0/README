@@ -1,0 +1,18 @@
+cd flask_app
+docker build --tag flask_app .
+
+cd flask_compose 
+docker compose up
+
+cd shamir_client
+python3 send_secretcd ..
+
+
+todo 
+send the column 
+recieve te collumn 
+save the collumn 
+
+send x 
+
+get calculation 

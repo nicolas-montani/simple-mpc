@@ -1,0 +1,15 @@
+--Comile the image--
+cd flask_app
+docker build --tag mpc_2 .
+
+--Launch Compose--
+cd flask_compose 
+docker compose up -d
+
+--Launch Client--
+cd shamir_client
+python3 send_secretcd ..
+
+
+
+--To do--
